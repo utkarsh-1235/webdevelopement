@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>    
+</head>
+<body>
+ <h2 id="form"align=center>Form</h2>   
+  <!--<style> 
+    #form,#name,#phoneno,#email,#dateofbirth,#writeaboutyoursel,#gender{
+        background-color:rgb(200,0,10);
+        border:4px solid black ;
+        border-radius:20px;
+        background-color:bisque
+    }
+ </style>-->
+ <form action="backend php">
+    <label for="name">Name</label>
+    <div id="name">
+        Name: <input type="text" name="Myname" id="name">
+    </div>
+    <br>
+    <div id="phoneno">
+        Phone no.:<input type="numeric" name="My Phone no.">
+    </div>
+    <br>
+    <div id="email">
+        Email: <input type="Email" name="My email">
+    </div>
+    <br>
+    <div id="dateofbirth">
+        Date of Birth:<input type="date" name="id">
+    </div>
+    <br>
+    <div id="gender">
+        Gender:<Select name="My gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="other">other</option>
+    </div>
+    <br>
+    <div>
+         Are you eligible?: <input type="checkbox" name="myEligibility">
+    </div>
+    <br>
+    <div id="weiteaboutyourself">
+       Write about yourself: <textarea name="myText" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Submit Now">
+    </div>   
+    <div>
+        <input type="reset" value="Reset Now">
+    </div>
+</form>
+</body>
+</html>

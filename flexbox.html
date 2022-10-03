@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container{
+            height:300px;
+            width:100%;
+            border: 2px solid black;
+            display: flex;
+            /*Flex box properties for flex container*/
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .item{
+            background-color: tomato;
+            border:2px solid black;
+            margin:10px;
+            padding:3px;
+            height:150px;
+            width:100px;
+            text-align: center;
+
+        }
+        
+        #item1{
+            order: 4;
+            flex:4 4 300px;
+            align-self:flex-end;
+        }
+        #item2{
+            order: 5;
+            align-self:center
+        }
+        #item3{
+            order: 6;
+            align-self:center
+        }
+        #item4{
+            order:3 ;
+            align-self:center
+        }
+        #item5{
+            order: 2;
+            align-self:center
+        }
+        #item6{
+            order: 1;
+            align-self:center
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello I am flexbox</h1>
+    <div class="container">
+    <div class="item" id="item1">First Box</div>
+    <div class="item" id="item2">Second Box</div>
+    <div class="item" id="item3">Third Box</div>
+    <div class="item" id="item4">Fourth Box</div>
+    <div class="item" id="item5">Fifth Box</div>
+    <div class="item" id="item6">Sixth Box</div>
+    </div>
+
+    
+</body>
+</html>
