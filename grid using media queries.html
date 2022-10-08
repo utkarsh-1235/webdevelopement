@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas:
+            'item1 item1 item1 1tem1'
+            'item2 item2 item2 1tem2'
+            'item3 item3 item3 1tem3'
+            'item4 item4 item4 1tem4';
+        }
+        .box{
+            background-color: yellow;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+         @media (max-width:300px){
+            #item1{
+                display:block;
+                background-color: cyan;
+                grid-area:item1;
+            }
+        }
+        @media (min-width:300px)and(max-width:500px) {
+            #item2{
+                display:block;
+                background-color: blueviolet;
+                grid-area: item2;
+
+            }
+        }
+        @media(min-width:500px)and(max-width:800px)
+        {
+            #item3{
+                  display:block;
+                  color:black;
+                  background-color: yellow;
+                  grid-area: item3;
+
+            }
+        }
+        @media(min-width:800px)
+        {
+            #item4{
+                display:block;
+                background-color: green;
+                grid-area: item4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="item1">Mai ek iphone hu</div>
+        <div class="box" id="item2">Mai ek ipad hu</div>
+        <div class="box" id="item3">Mai ek macbook hu</div>
+        <div class="box" id="item4">Mai ek ipod hu</div>
+    </div> 
+</body>
+</html>
